@@ -1,17 +1,17 @@
 import { Component, OnInit } from "@angular/core";
 import { first } from "rxjs/operators";
-import { User } from "../modele/user";
-import { Produit } from "../modele/produit";
-import { UserService } from "../service/user.service";
-import { ProduitService } from "../service/produit.service";
+import { User } from "../../../modele/user";
+import { Produit } from "../../../modele/produit";
+import { UserService } from "../../../service/user.service";
+import { ProduitService } from "../../../service/produit.service";
 
 
 
 @Component({
-    templateUrl: './home.Component.html',
+    templateUrl: './home.component.html',
   })
   export class HomeComponent implements OnInit {
-  
+
     public headerRow: string[];
 
 
