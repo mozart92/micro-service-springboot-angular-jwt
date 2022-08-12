@@ -8,7 +8,8 @@ import {ProduitsComponent} from './produits.component';
 @NgModule({
   declarations: [
     ProduitsComponent,
-
+    ProduitEmpruntComponent,
+    ProduitAvailibleComponent
   ],
   imports: [
     CommonModule,

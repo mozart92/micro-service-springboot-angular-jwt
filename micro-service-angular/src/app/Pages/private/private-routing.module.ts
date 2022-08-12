@@ -4,6 +4,8 @@ import {LoginComponent} from '../public/login/login.component';
 import {RegisterUserComponent} from '../public/register-user/register-user.component';
 import {BaseLayoutComponent} from '../../loyout/base-layout/base-layout.component';
 import {CreateProductComponent} from './create-product/create-product.component';
+import {ProduitAvailibleComponent} from './produits/produit-availible/produit-availible.component';
+import {ProduitEmpruntComponent} from './produits/produit-emprunt/produit-emprunt.component';
 
 const routes: Routes = [
   {
@@ -17,12 +19,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo:'',
-        pathMatch: ''
-      },
-      {
-        path: '',
-        loadChildren: () => import("../private/produits/produits.module").then(m => m.ProduitsModule)
+        loadChildren: ()=> import("../private/produits/produits.module").then(m => m.ProduitsModule)
       },
       {
         path: 'create-produit',

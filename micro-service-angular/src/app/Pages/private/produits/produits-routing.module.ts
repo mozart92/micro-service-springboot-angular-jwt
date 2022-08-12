@@ -6,11 +6,6 @@ import {ProduitEmpruntComponent} from './produit-emprunt/produit-emprunt.compone
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '',
-    pathMatch: ''
-  },
-  {
-    path: '',
     component: ProduitAvailibleComponent
   },
   {

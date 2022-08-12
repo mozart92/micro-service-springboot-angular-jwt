@@ -1,99 +1,29 @@
 <div class="row">
   <div class="col-sm-12 mb-3">
-    <div class="alert alert-primary text-center" role="alert">
-      <h2 class="" style="margin: 0">Vos livres empruntes</h2>
+    <div class="alert alert-success text-center" role="alert">
+      <h2>Vos livres empruntes</h2>
     </div>
   </div>
-  <div class="col-sm-4 mb-3 ">
+  <div class="col-sm-4 mb-3" *ngFor="let itemProduit of listProduit">
     <div class="card shadow">
-      <div class="card-body">
-        <h2 class="card-title">Special title treatment</h2>
-        <p class="card-text">categorie</p>
-        <p class="card-text">20144777</p>
-        <a href="#" class="btn btn-primary">Emprunter</a>
+      <div class="row card-body">
+        <h2 class="col-sm-12 card-title">{{itemProduit.nom}}</h2>
+        <div class="col-sm-6">
+          <h4 class="font-weight-bold">categorie</h4>
+          <p class="card-text categorie">{{itemProduit.categorie}}</p>
+        </div>
+        <div class="col-sm-6  montant text-right">
+          <h4 class="font-weight-bold">Montant</h4>
+          <p class="card-text categorie">{{itemProduit.prix | currency: 'XAF': 'symbol': '3.2-2': 'fr' }}</p>
+        </div>
+        <div class="col-sm-6 mt-3">
+          <a href="#" class="btn btn-danger">Restituer</a>
+        </div>
+        <p class="col-sm-6 mt-3 date-format">
+          <span>{{itemProduit.date}}</span>
+          <span>{{itemProduit.date}}</span>
+        </p>
       </div>
     </div>
   </div>
-  <div class="col-sm-4 mb-3 ">
-    <div class="card shadow">
-      <div class="card-body">
-        <h2 class="card-title">Special title treatment</h2>
-        <p class="card-text">categorie</p>
-        <p class="card-text">20144777</p>
-        <a href="#" class="btn btn-primary">Emprunter</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-4 mb-3 ">
-    <div class="card shadow">
-      <div class="card-body">
-        <h2 class="card-title">Special title treatment</h2>
-        <p class="card-text">categorie</p>
-        <p class="card-text">20144777</p>
-        <a href="#" class="btn btn-primary">Emprunter</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-4 mb-3 ">
-    <div class="card shadow">
-      <div class="card-body">
-        <h2 class="card-title">Special title treatment</h2>
-        <p class="card-text">categorie</p>
-        <p class="card-text">20144777</p>
-        <a href="#" class="btn btn-primary">Emprunter</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-4 mb-3 ">
-    <div class="card shadow">
-      <div class="card-body">
-        <h2 class="card-title">Special title treatment</h2>
-        <p class="card-text">categorie</p>
-        <p class="card-text">20144777</p>
-        <a href="#" class="btn btn-primary">Emprunter</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-4 mb-3 ">
-    <div class="card shadow">
-      <div class="card-body">
-        <h2 class="card-title">Special title treatment</h2>
-        <p class="card-text">categorie</p>
-        <p class="card-text">20144777</p>
-        <a href="#" class="btn btn-primary">Emprunter</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-4 mb-3 ">
-    <div class="card shadow">
-      <div class="card-body">
-        <h2 class="card-title">Special title treatment</h2>
-        <p class="card-text">categorie</p>
-        <p class="card-text">20144777</p>
-        <a href="#" class="btn btn-primary">Emprunter</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-4 mb-3 ">
-    <div class="card shadow">
-      <div class="card-body">
-        <h2 class="card-title">Special title treatment</h2>
-        <p class="card-text">categorie</p>
-        <p class="card-text">20144777</p>
-        <a href="#" class="btn btn-primary">Emprunter</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-4 mb-3 ">
-    <div class="card shadow">
-      <div class="card-body">
-        <h2 class="card-title">Special title treatment</h2>
-        <p class="card-text">categorie</p>
-        <p class="card-text">20144777</p>
-        <a href="#" class="btn btn-primary">Emprunter</a>
-      </div>
-    </div>
-  </div>
-
-
 </div>

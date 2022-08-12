@@ -8,6 +8,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {CreateProductComponent} from './create-product/create-product.component';
 
+
 @NgModule({
   declarations: [BaseLayoutComponent, HeaderComponent, CreateProductComponent],
   imports: [
